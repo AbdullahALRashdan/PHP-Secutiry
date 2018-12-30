@@ -28,3 +28,4 @@ function preventInj($data){
 $username = preventInj($_REQUEST['username']);
 
 ?>
+
