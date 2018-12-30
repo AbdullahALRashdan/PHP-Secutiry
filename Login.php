@@ -1,6 +1,6 @@
 <?php
 
-function preventInj($data){
+function filter($data){
     $error = 0;
     if(strpos($data,"--")!==false)
         $error = 1;
@@ -25,7 +25,7 @@ function preventInj($data){
     }
 }
 
-$username = preventInj($_REQUEST['username']);
+$username = filter($_REQUEST['username']);
 
 ?>
 
